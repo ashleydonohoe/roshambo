@@ -35,12 +35,14 @@ class PlayViewController: UIViewController {
         let result = decideWinner("rock", computerChoice: getComputerChoice())
         winningMessage = result.0
         winningImage = result.1
+        performSegueWithIdentifier("seeResults", sender: self)
         
     }
     @IBAction func chooseScissors(sender: AnyObject) {
         let result = decideWinner("scissors", computerChoice: getComputerChoice())
         winningMessage = result.0
         winningImage = result.1
+        performSegueWithIdentifier("seeResults", sender: self)
     }
     
     // Returns winning message and image to use

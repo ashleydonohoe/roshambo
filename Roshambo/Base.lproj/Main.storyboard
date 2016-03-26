@@ -149,6 +149,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperCoversRock.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tuu-D2-Bno">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPs-B4-hlI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="PLAY AGAIN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="6ed-GV-Ebe" eventType="touchUpInside" id="ENY-47-buH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -156,15 +166,20 @@
                             <constraint firstItem="Q1K-Zb-Azo" firstAttribute="top" secondItem="tuu-D2-Bno" secondAttribute="bottom" constant="68" id="3vj-5L-M7F"/>
                             <constraint firstItem="tuu-D2-Bno" firstAttribute="top" secondItem="iy7-Fv-v4n" secondAttribute="bottom" constant="43" id="Aas-Gw-Epn"/>
                             <constraint firstItem="tuu-D2-Bno" firstAttribute="top" secondItem="iy7-Fv-v4n" secondAttribute="bottom" constant="43" id="Dhu-C3-WsK"/>
+                            <constraint firstItem="PPs-B4-hlI" firstAttribute="top" secondItem="tuu-D2-Bno" secondAttribute="bottom" constant="18" id="M0y-I3-fRt"/>
+                            <constraint firstItem="PPs-B4-hlI" firstAttribute="leading" secondItem="UuW-1m-OV3" secondAttribute="leadingMargin" constant="144" id="RI2-Gt-gkw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iy7-Fv-v4n" secondAttribute="trailing" constant="47" id="SsR-Po-0bM"/>
                             <constraint firstItem="iy7-Fv-v4n" firstAttribute="top" secondItem="hIC-FI-FrU" secondAttribute="bottom" constant="53" id="bRd-Ew-0f7"/>
                             <constraint firstItem="tuu-D2-Bno" firstAttribute="leading" secondItem="UuW-1m-OV3" secondAttribute="leadingMargin" id="gUN-mZ-w3I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PPs-B4-hlI" secondAttribute="trailing" constant="131" id="k8c-1E-5Na"/>
                             <constraint firstItem="iy7-Fv-v4n" firstAttribute="leading" secondItem="UuW-1m-OV3" secondAttribute="leadingMargin" constant="55" id="nGQ-4x-T6h"/>
+                            <constraint firstItem="Q1K-Zb-Azo" firstAttribute="top" secondItem="PPs-B4-hlI" secondAttribute="bottom" constant="20" id="rGw-n4-FSE"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="iy7-Fv-v4n"/>
                                 <exclude reference="tuu-D2-Bno"/>
+                                <exclude reference="PPs-B4-hlI"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="SsR-Po-0bM"/>
@@ -174,13 +189,18 @@
                                 <exclude reference="Aas-Gw-Epn"/>
                                 <exclude reference="Dhu-C3-WsK"/>
                                 <exclude reference="gUN-mZ-w3I"/>
+                                <exclude reference="M0y-I3-fRt"/>
+                                <exclude reference="RI2-Gt-gkw"/>
+                                <exclude reference="k8c-1E-5Na"/>
                                 <exclude reference="3vj-5L-M7F"/>
+                                <exclude reference="rGw-n4-FSE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="iy7-Fv-v4n"/>
                                 <include reference="tuu-D2-Bno"/>
+                                <include reference="PPs-B4-hlI"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="SsR-Po-0bM"/>
@@ -190,7 +210,11 @@
                                 <include reference="Aas-Gw-Epn"/>
                                 <include reference="Dhu-C3-WsK"/>
                                 <include reference="gUN-mZ-w3I"/>
+                                <include reference="M0y-I3-fRt"/>
+                                <include reference="RI2-Gt-gkw"/>
+                                <include reference="k8c-1E-5Na"/>
                                 <include reference="3vj-5L-M7F"/>
+                                <include reference="rGw-n4-FSE"/>
                             </mask>
                         </variation>
                     </view>
