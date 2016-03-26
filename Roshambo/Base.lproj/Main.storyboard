@@ -20,21 +20,21 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3z-kz-kpZ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="paper"/>
+                                <state key="normal" image="paper.png"/>
                                 <connections>
                                     <action selector="choosePaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cyc-Du-DQF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L5-SP-xsd">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="scissors"/>
+                                <state key="normal" image="scissors.png"/>
                                 <connections>
                                     <action selector="chooseScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="neu-av-Vzu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rw2-lV-wxK">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="rock"/>
+                                <state key="normal" image="rock.png"/>
                                 <connections>
                                     <action selector="chooseRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="De1-FK-rpd"/>
                                 </connections>
@@ -128,7 +128,9 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="165" id="pJi-TX-g97"/>
+                                    <constraint firstAttribute="height" constant="165" id="pJi-TX-g97">
+                                        <variation key="widthClass=compact" constant="51"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -144,32 +146,20 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tuu-D2-Bno">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperCoversRock.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tuu-D2-Bno">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="235" id="dKi-mZ-3E1"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="dKi-mZ-3E1"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="dKi-mZ-3E1"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tuu-D2-Bno" firstAttribute="top" secondItem="iy7-Fv-v4n" secondAttribute="bottom" constant="82" id="4DJ-It-Evx"/>
-                            <constraint firstItem="iy7-Fv-v4n" firstAttribute="leading" secondItem="UuW-1m-OV3" secondAttribute="leadingMargin" constant="55" id="DGr-PT-sDQ"/>
-                            <constraint firstItem="iy7-Fv-v4n" firstAttribute="top" secondItem="hIC-FI-FrU" secondAttribute="bottom" constant="53" id="GJg-Dh-y8u"/>
-                            <constraint firstItem="Q1K-Zb-Azo" firstAttribute="top" secondItem="tuu-D2-Bno" secondAttribute="bottom" constant="45" id="P5q-VO-We2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tuu-D2-Bno" secondAttribute="trailing" constant="47" id="Yv1-eA-FD3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iy7-Fv-v4n" secondAttribute="trailing" constant="54" id="aL0-qM-chR"/>
-                            <constraint firstItem="tuu-D2-Bno" firstAttribute="leading" secondItem="UuW-1m-OV3" secondAttribute="leadingMargin" constant="60" id="ob1-hI-fZp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tuu-D2-Bno" secondAttribute="trailing" constant="-12" id="17k-6O-3y2"/>
+                            <constraint firstItem="Q1K-Zb-Azo" firstAttribute="top" secondItem="tuu-D2-Bno" secondAttribute="bottom" constant="68" id="3vj-5L-M7F"/>
+                            <constraint firstItem="tuu-D2-Bno" firstAttribute="top" secondItem="iy7-Fv-v4n" secondAttribute="bottom" constant="43" id="Aas-Gw-Epn"/>
+                            <constraint firstItem="tuu-D2-Bno" firstAttribute="top" secondItem="iy7-Fv-v4n" secondAttribute="bottom" constant="43" id="Dhu-C3-WsK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iy7-Fv-v4n" secondAttribute="trailing" constant="47" id="SsR-Po-0bM"/>
+                            <constraint firstItem="iy7-Fv-v4n" firstAttribute="top" secondItem="hIC-FI-FrU" secondAttribute="bottom" constant="53" id="bRd-Ew-0f7"/>
+                            <constraint firstItem="tuu-D2-Bno" firstAttribute="leading" secondItem="UuW-1m-OV3" secondAttribute="leadingMargin" id="gUN-mZ-w3I"/>
+                            <constraint firstItem="iy7-Fv-v4n" firstAttribute="leading" secondItem="UuW-1m-OV3" secondAttribute="leadingMargin" constant="55" id="nGQ-4x-T6h"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -177,13 +167,14 @@
                                 <exclude reference="tuu-D2-Bno"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="DGr-PT-sDQ"/>
-                                <exclude reference="GJg-Dh-y8u"/>
-                                <exclude reference="aL0-qM-chR"/>
-                                <exclude reference="4DJ-It-Evx"/>
-                                <exclude reference="Yv1-eA-FD3"/>
-                                <exclude reference="ob1-hI-fZp"/>
-                                <exclude reference="P5q-VO-We2"/>
+                                <exclude reference="SsR-Po-0bM"/>
+                                <exclude reference="bRd-Ew-0f7"/>
+                                <exclude reference="nGQ-4x-T6h"/>
+                                <exclude reference="17k-6O-3y2"/>
+                                <exclude reference="Aas-Gw-Epn"/>
+                                <exclude reference="Dhu-C3-WsK"/>
+                                <exclude reference="gUN-mZ-w3I"/>
+                                <exclude reference="3vj-5L-M7F"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -192,13 +183,14 @@
                                 <include reference="tuu-D2-Bno"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="DGr-PT-sDQ"/>
-                                <include reference="GJg-Dh-y8u"/>
-                                <include reference="aL0-qM-chR"/>
-                                <include reference="4DJ-It-Evx"/>
-                                <include reference="Yv1-eA-FD3"/>
-                                <include reference="ob1-hI-fZp"/>
-                                <include reference="P5q-VO-We2"/>
+                                <include reference="SsR-Po-0bM"/>
+                                <include reference="bRd-Ew-0f7"/>
+                                <include reference="nGQ-4x-T6h"/>
+                                <include reference="17k-6O-3y2"/>
+                                <include reference="Aas-Gw-Epn"/>
+                                <include reference="Dhu-C3-WsK"/>
+                                <include reference="gUN-mZ-w3I"/>
+                                <include reference="3vj-5L-M7F"/>
                             </mask>
                         </variation>
                     </view>
@@ -213,8 +205,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="paper" width="75" height="65"/>
-        <image name="rock" width="75" height="65"/>
-        <image name="scissors" width="75" height="65"/>
+        <image name="PaperCoversRock.jpg" width="160" height="120"/>
+        <image name="paper.png" width="75" height="65"/>
+        <image name="rock.png" width="75" height="65"/>
+        <image name="scissors.png" width="75" height="65"/>
     </resources>
 </document>

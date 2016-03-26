@@ -9,6 +9,9 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+    
+    var resultMessage: String!
+    var resultImage: String!
 
     @IBOutlet weak var resultsLabel: UILabel!
     
@@ -16,6 +19,11 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        resultsLabel.text = resultMessage
+        print(resultImage)
+        
+        image.image = UIImage(named: resultImage)
 
         // Do any additional setup after loading the view.
     }

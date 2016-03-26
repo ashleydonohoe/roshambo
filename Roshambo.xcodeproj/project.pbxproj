@@ -13,6 +13,13 @@
 		E07550FF1CA4EE10000BF199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07550FE1CA4EE10000BF199 /* Assets.xcassets */; };
 		E07551021CA4EE10000BF199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07551001CA4EE10000BF199 /* LaunchScreen.storyboard */; };
 		E075510A1CA62BA2000BF199 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07551091CA62BA2000BF199 /* ResultsViewController.swift */; };
+		E07551121CA63CE0000BF199 /* itsATie.png in Resources */ = {isa = PBXBuildFile; fileRef = E075510B1CA63CE0000BF199 /* itsATie.png */; };
+		E07551131CA63CE0000BF199 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = E075510C1CA63CE0000BF199 /* paper.png */; };
+		E07551141CA63CE0000BF199 /* PaperCoversRock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E075510D1CA63CE0000BF199 /* PaperCoversRock.jpg */; };
+		E07551151CA63CE0000BF199 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = E075510E1CA63CE0000BF199 /* rock.png */; };
+		E07551161CA63CE0000BF199 /* RockCrushesScissors.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E075510F1CA63CE0000BF199 /* RockCrushesScissors.jpeg */; };
+		E07551171CA63CE0000BF199 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = E07551101CA63CE0000BF199 /* scissors.png */; };
+		E07551181CA63CE0000BF199 /* ScissorsCutPaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E07551111CA63CE0000BF199 /* ScissorsCutPaper.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		E07551011CA4EE10000BF199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E07551031CA4EE10000BF199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E07551091CA62BA2000BF199 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		E075510B1CA63CE0000BF199 /* itsATie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itsATie.png; sourceTree = "<group>"; };
+		E075510C1CA63CE0000BF199 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		E075510D1CA63CE0000BF199 /* PaperCoversRock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PaperCoversRock.jpg; sourceTree = "<group>"; };
+		E075510E1CA63CE0000BF199 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		E075510F1CA63CE0000BF199 /* RockCrushesScissors.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RockCrushesScissors.jpeg; sourceTree = "<group>"; };
+		E07551101CA63CE0000BF199 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
+		E07551111CA63CE0000BF199 /* ScissorsCutPaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ScissorsCutPaper.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,13 @@
 				E07550F71CA4EE10000BF199 /* AppDelegate.swift */,
 				E07550F91CA4EE10000BF199 /* PlayViewController.swift */,
 				E07551091CA62BA2000BF199 /* ResultsViewController.swift */,
+				E075510B1CA63CE0000BF199 /* itsATie.png */,
+				E075510C1CA63CE0000BF199 /* paper.png */,
+				E075510D1CA63CE0000BF199 /* PaperCoversRock.jpg */,
+				E075510E1CA63CE0000BF199 /* rock.png */,
+				E075510F1CA63CE0000BF199 /* RockCrushesScissors.jpeg */,
+				E07551101CA63CE0000BF199 /* scissors.png */,
+				E07551111CA63CE0000BF199 /* ScissorsCutPaper.jpg */,
 				E07550FB1CA4EE10000BF199 /* Main.storyboard */,
 				E07550FE1CA4EE10000BF199 /* Assets.xcassets */,
 				E07551001CA4EE10000BF199 /* LaunchScreen.storyboard */,
@@ -125,9 +146,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07551181CA63CE0000BF199 /* ScissorsCutPaper.jpg in Resources */,
 				E07551021CA4EE10000BF199 /* LaunchScreen.storyboard in Resources */,
+				E07551161CA63CE0000BF199 /* RockCrushesScissors.jpeg in Resources */,
+				E07551131CA63CE0000BF199 /* paper.png in Resources */,
+				E07551121CA63CE0000BF199 /* itsATie.png in Resources */,
+				E07551151CA63CE0000BF199 /* rock.png in Resources */,
+				E07551141CA63CE0000BF199 /* PaperCoversRock.jpg in Resources */,
 				E07550FF1CA4EE10000BF199 /* Assets.xcassets in Resources */,
 				E07550FD1CA4EE10000BF199 /* Main.storyboard in Resources */,
+				E07551171CA63CE0000BF199 /* scissors.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

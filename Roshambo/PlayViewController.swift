@@ -24,17 +24,23 @@ class PlayViewController: UIViewController {
 
 
     @IBAction func choosePaper(sender: AnyObject) {
-        print(decideWinner("paper", computerChoice: getComputerChoice()))
+     let result = decideWinner("paper", computerChoice: getComputerChoice())
+     winningMessage = result.0
+     winningImage = result.1
+     performSegueWithIdentifier("seeResults", sender: self)
         
     }
     
     @IBAction func chooseRock(sender: AnyObject) {
-        print(decideWinner("rock", computerChoice: getComputerChoice()))
+        let result = decideWinner("rock", computerChoice: getComputerChoice())
+        winningMessage = result.0
+        winningImage = result.1
         
     }
     @IBAction func chooseScissors(sender: AnyObject) {
-        print(decideWinner("scissors", computerChoice: getComputerChoice()))
-        
+        let result = decideWinner("scissors", computerChoice: getComputerChoice())
+        winningMessage = result.0
+        winningImage = result.1
     }
     
     // Returns winning message and image to use
@@ -42,19 +48,19 @@ class PlayViewController: UIViewController {
     
         switch(moveChosen, computerChoice) {
         case ("rock", "scissors"):
-            return ("Rock breaks scissors. You win!", "RockCrushesScissors")
+            return ("Rock breaks scissors. You win!", "RockCrushesScissors.jpg")
         case("scissors", "rock"):
-            return ("Rock breaks scissors. You lose", "RockCrushesScissors")
+            return ("Rock breaks scissors. You lose", "RockCrushesScissors.jpg")
         case("scissors", "paper"):
-            return ("Scissors cut paper. You win!", "ScissorsCutPaper")
+            return ("Scissors cut paper. You win!", "ScissorsCutPaper.jpg")
         case("paper", "scissors"):
-            return ("Scissors cut paper. You lose!", "ScissorsCutPaper")
+            return ("Scissors cut paper. You lose!", "ScissorsCutPaper.jpg")
         case("paper", "rock"):
-            return ("Paper covers rock. You win!", "PaperCoversRock")
+            return ("Paper covers rock. You win!", "PaperCoversRock.jpg")
         case("rock", "paper"):
-            return ("Paper covers rock. You lose!", "PaperCoversRock")
+            return ("Paper covers rock. You lose!", "PaperCoversRock.jpg")
         default:
-            return ("It is a tie!", "itsATie")
+            return ("It is a tie!", "itsATie.png")
             
         }
     }
@@ -71,5 +77,13 @@ class PlayViewController: UIViewController {
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "seeResults" {
+            let controller = segue.destinationViewController as! ResultsViewController
+            
+            controller.resultMessage = winningMessage
+            controller.resultImage = winningImage
+        }
+    }
 }
 
